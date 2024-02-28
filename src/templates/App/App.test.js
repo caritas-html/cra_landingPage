@@ -8,7 +8,7 @@ const renderTheme = (children) => {
 };
 
 test('renders learn react link', () => {
-  const { debug } = renderTheme(<Home />);
+  renderTheme(<Home />);
   const headingContainer = screen.getByRole('heading', {
     name: 'hello',
   }).parentElement;
